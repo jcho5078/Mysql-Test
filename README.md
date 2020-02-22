@@ -65,7 +65,7 @@ default-time-zone=Asia/Seoul<br>
 재실행 했으면, SELECT @@global.time_zone, @@session.time_zone; 실행 해봄.<br>
 <img src="https://user-images.githubusercontent.com/60742556/75094333-794d7f00-55cd-11ea-80f0-fdb203cdee6f.PNG"><br>
   @@global.time_zone값과  @@session.time_zone값이 빌어먹을 SYSTEM 으로 나와있다면, 
-  set time_zone='Asia/Seoul';<br> 과 set @@global.time_zone='Asia/Seoul';<br> 실행.
+  set time_zone='Asia/Seoul';<br> 과 set @@global.time_zone='Asia/Seoul'; 실행.<br>
 	<img src="https://user-images.githubusercontent.com/60742556/75094451-8e76dd80-55ce-11ea-8002-ff54b677cea5.PNG"><br>
 	<img src="https://user-images.githubusercontent.com/60742556/75094335-79e61580-55cd-11ea-81e8-27aeee6df01b.PNG"><br>
 	<img src="https://user-images.githubusercontent.com/60742556/75094337-7a7eac00-55cd-11ea-8bda-e981e3120306.PNG"><br>
