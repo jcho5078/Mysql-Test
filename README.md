@@ -34,7 +34,7 @@ mysqld --console --explicit_defaults_for_timestamp --skip-grant-tables &<br>
     <p>https://to-dy.tistory.com/29 여기서 my.ini파일 만들기</p>
     <hr>
 <p>
-  <h2>my.ini파일 명을 이렇게  바꾸자.</h2>
+  <h2>my.ini파일 내용을 이렇게  바꾸자.</h2>
   [mysqld]<br>
 basedir=C:\Users\jcho5\Downloads\mysql-5.7.23-winx64\mysql-5.7.23-winx64\<br>
 datadir=C:\Users\jcho5\Downloads\mysql-5.7.23-winx64\mysql-5.7.23-winx64\data\<br>
@@ -58,10 +58,11 @@ default-character-set = utf8<br>
 [mysqld_safe]<br>
 timezone=UTC<br>
 default-time-zone=Asia/Seoul<br>
-<h5>이렇게하면 utf-8 깨짐도 고칠 수 있고 일석이조. 위 default-time-zone=Asia/Seoul이건 없어도 될듯. 아래 명령어로 값을 바꾸자.</h5><br>
+<h5>이렇게하면 utf-8 깨짐도 고칠 수 있고 일석이조. 위 default-time-zone=Asia/Seoul이건 없어도 될듯. 완료했다면, 아래 명령어로 값을 바꾸자.</h5><br>
 </p>
 <p>
-  만들었으면 SELECT @@global.time_zone, @@session.time_zone; 실행 해봄.<br>
+  만들었으면 일단 mysql 서버 종료하고 재실행한다.<br>
+재실행 했으면, SELECT @@global.time_zone, @@session.time_zone; 실행 해봄.<br>
 <img src="https://user-images.githubusercontent.com/60742556/75094333-794d7f00-55cd-11ea-80f0-fdb203cdee6f.PNG"><br>
   @@global.time_zone값과  @@session.time_zone값이 빌어먹을 SYSTEM 으로 나와있다면, 
   set time_zone='Asia/Seoul';<br> 과 set @@global.time_zone='Asia/Seoul';<br> 실행.
