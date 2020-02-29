@@ -18,6 +18,10 @@ mysqld --console --explicit_defaults_for_timestamp --skip-grant-tables &<br>
 패스워드는 1234로 설정함.<br>
 <hr>
 <div>
+https://dev.mysql.com/downloads/connector/j/ <br>
+위 링크에서 mysql java연동파일을 받는다.<br>
+그 후 압축을 풀어 jar 파일을 자바 lib폴더 내 넣는다.<br>
+	<br>
 <h1>이클립스와 mysql의 connect 테스트에서 error가 발생할 경우!</h1><br> 
   <p>1.설정한 DB와 url 이름 불일치 한 경우. ==> 이름 동일하게 고치기. (show databases; 로 현재 존재하는 DB목록 확인.)</p>
   <p>2.mysql connector 버전 이클립스에서 지원하는 버전으로 다운로드. ==> 현 5.1버전 까지.</p>
@@ -74,3 +78,4 @@ default-time-zone=Asia/Seoul<br>
 
 </p>
 </div>
+
